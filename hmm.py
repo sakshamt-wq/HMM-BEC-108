@@ -3,7 +3,7 @@ import numpy as np
 
 # -------------------------------
 # States
-# -------------------------------
+# ----------------------------
 states = {
     "s": 0,
     "E": 1,
@@ -70,7 +70,7 @@ def get_log_prob_for_state_path(state_path, sequence):
 # -------------------------------
 # Test different splice positions
 # -------------------------------
-paths = [
+LENGTHS = [
     "EEEEEE5IIIIIIIIIIIIIIIIIII",
     "EEEEEEEE5IIIIIIIIIIIIIIIII",
     "EEEEEEEEEEEE5IIIIIIIIIIIII",
@@ -85,7 +85,7 @@ paths = [
 # -------------------------------
 results = []
 
-for p in paths:
+for LENGTHS in paths:
     prob = get_log_prob_for_state_path(p, query_sequence) + math.log(0.1)
     results.append((p, prob))
     print(p, ":", prob)
