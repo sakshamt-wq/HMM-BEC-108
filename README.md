@@ -1,19 +1,19 @@
-HMM Splice Site Predictor
+# HMM Splice Site Predictor
 A Python-based implementation of a Hidden Markov Model (HMM) designed to identify splice sites in DNA sequences by modeling the transitions between exons and introns.
 
-Features
+# Features
 State Modeling: Defines states for Exons, Introns, and Splice Sites.
 
 Probabilistic Inference: Computes log-probabilities to determine the most likely structure of a given DNA sequence.
 
 Numerical Stability: Performs calculations in log-space to prevent underflow issues common with small probabilities.
 
-Prerequisites
+# Prerequisites
 Python 3.x
 
 NumPy
 
-Installation
+# Installation
 Ensure you have the required dependency installed:
 
 Bash
@@ -32,7 +32,7 @@ hmm.py: The core script containing the HMM logic, transition/emission matrices, 
 
 README.md: Project documentation.
 
-Troubleshooting
+# Troubleshooting
 If you encounter errors related to path iteration, ensure your main execution loop is structured as follows:
 
 Python
